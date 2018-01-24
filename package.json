@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "postinstall": "rm -rf ./node_modules/lottie-react-native/src/index.d.ts",
+    "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "lottie-react-native": "^2.3.2",
-    "react": "16.2.0",
-    "react-native": "0.52.1"
+    "react": "^16.2.0",
+    "react-native": "^0.51.0"
   },
   "devDependencies": {
-    "@types/react": "^16.0.34",
-    "@types/react-native": "^0.52.2"
+    "@types/react": "^16.0.35",
+    "@types/react-native": "^0.52.5"
   }
 }
